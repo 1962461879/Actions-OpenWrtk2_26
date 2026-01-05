@@ -18,3 +18,7 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+rm openwrt/target/linux/ramips/image/mt7620.mk
+mv mt7620.mk openwrt/target/linux/ramips/image/mt7620.mk
+rm openwrt/target/linux/ramips/dts/mt7620a_phicomm_k2-v22.4.dts
+mv mt7620a_phicomm_k2-v22.4.dts openwrt/target/linux/ramips/dts/mt7620a_phicomm_k2-v22.4.dts
